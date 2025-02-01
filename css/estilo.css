@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+*{
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    font-family: "Roboto", serif;
+    background-color: #eff2f2;
+}
+.botoes {
+    background-color: rgba(224,127,0,1);
+    border-bottom: 4px solid rgb(85, 85, 85);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* Distribui igualmente as colunas */
+    grid-template-rows: 10vh;
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-items: center; /* Alinha os itens horizontalmente */
+    position: fixed;  /* Fixa o menu na tela */
+    top: 0;  /* Posiciona o menu no topo */
+    left: 0;  /* Alinha o menu à esquerda */
+    width: 100%;  /* Ocupa toda a largura da tela */
+    height: 80px;
+    z-index: 10;  /* Garante que o menu fique acima de outros elementos */
+    padding: 10px 0;  /* Adiciona um padding para espaçamento vertical */
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.botoes h1:hover{
+    border-top: 2px solid rgb(190, 255, 252);
+}
+#antonio{
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#antonio h1:hover{
+    font-size: 40px;
+}
+.botao{
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+.botao a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.botao :hover{
+    color: rgb(211, 251, 255);
+}
+
+.menu {
+    display: flex;
+    align-items: center; /* Centralizar verticalmente */
+    gap: 20px; /* Espaço entre as colunas */
+    padding: 20px;
+    margin-top: 80px;
+}
+
+/* Coluna da imagem */
+#fotoDePerfil {
+    flex: 1; /* Ocupa 1 parte do espaço total */
+    text-align: center;
+}
+
+#fotoDePerfil img {
+    width: 100%; /* Imagem ocupa toda a largura da coluna */
+    max-width: 300px; /* Limite máximo para não ficar muito grande */
+    border-radius: 50%; /* Imagem circular */
+}
+
+/* Coluna de texto */
+.conteudo {
+    flex: 2; /* Ocupa 2 partes do espaço total */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+/* Texto principal */
+.destaque {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.336);
+}
+
+.nome{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* Texto descritivo */
+.descricao {
+    line-height: 1.6;
+    font-size: 1rem;
+    width: 70%;
+    font-style: italic;
+}
+
+/* Botões de ação */
+.botoes-acao {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Botão Download CV */
+.botao-cv {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(40,126,138,1);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-cv:hover {
+    background-color:rgba(224,127,0,1); /* Cor alterada no hover */
+}
+/* Botão Contate Agora */
+.botao-contato {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.295);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-contato:hover {
+    background-color: rgba(0, 0, 0, 0.555); /* Cor alterada no hover */
+    color: white; 
+
+}
+.sobremim {
+    margin-top: 100px;
+    padding: 20px;
+    height: 850px; /* Adicionando altura para criar a rolagem */
+}
+.icone {
+    width: 70px; /* Ajuste o tamanho do ícone */
+    height: 70px; /* Mantém o ícone proporcional */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+.sobremim {
+    display: flex; /* Define o contêiner como flex */
+    flex-direction: column; /* Coloca o título acima dos demais conteúdos */
+    gap: 20px; /* Espaçamento entre o título e os conteúdos abaixo */
+    align-items: center; /* Centraliza horizontalmente os itens */
+    padding: 20px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, rgba(8,76,97,1) 0%, rgba(8,76,97,1) 52%, rgba(40,126,138,1) 100%);
+    color: rgb(255, 255, 255);
+}
+
+.sobremim h1 {
+    font-size: 80px;
+    font-family: "DM Serif Display", serif;
+    text-shadow:  5px 4px 0px rgba(0, 0, 0, 0.288);
+    text-align: center;
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.sobremim-conteudo {
+    display: flex; /* Define o contêiner flex para imagem e texto */
+    flex-direction: row; /* Alinha os itens lado a lado */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    width: 100%; /* Ocupa toda a largura disponível */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente dentro da seção */
+}
+
+.fotoSobremim {
+    flex: 1; /* Faz a imagem ocupar uma parte proporcional do espaço */
+    display: flex; /* Garante que a imagem seja centralizada dentro do contêiner */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.fotoSobremim img {
+    width: 100%; /* Faz a imagem se ajustar ao tamanho do contêiner */
+    max-width: 300px; /* Limita o tamanho máximo da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    border: solid 1px white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.textoSobremim {
+    flex: 2; /* Faz o texto ocupar mais espaço */
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify; /* Justifica o texto */
+    color: rgb(255, 255, 255);
+    
+}
+.textoSobremim p {
+    width: 80%;
+    
+}
+.formacao{
+    height: 600px;
+}
+.formacao h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: "DM Serif Display", serif;
+    text-shadow:  5px 4px 0px rgba(0, 0, 0, 0.288);
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+.formacoes{
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f0ef;
+}
+.formacoes div{
+    justify-items: center;
+}
+.formacoes div ,img{
+   width: 100px;
+}
+.formacoes div, h2{
+   font-size: 15px;
+}
+.caixa1{
+    flex: 50%;
+    text-align: center;
+    height: 300px;
+    
+}
+.caixa1 div{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+
+}
+.caixa1 div img{ 
+    margin-top: 30px;
+}
+.caixa1 div h2{ 
+    margin-top: 30px;
+    font-weight:bold 5px;
+}
+.caixa1 div p{ 
+    margin-top: 55px;
+    color: rgb(255, 60, 0);
+    font-weight: 500;
+}
+.caixa2{
+    flex: 50%;
+    text-align: center;
+    width: 40%;
+    height: 300px;
+    
+}
+.caixa2 div{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+.caixa2 div img{ 
+    margin-top: 30px;
+}
+.caixa2 div h2{ 
+    margin-top: 30px;
+}
+.caixa2 div p{ 
+    margin-top: 30px;
+    color: rgb(255, 60, 0);
+    font-weight: 500;
+}
+.portfolio{
+    background: linear-gradient(90deg, rgba(8,76,97,1) 0%, rgba(8,76,97,1) 52%, rgba(40,126,138,1) 100%);
+    height: auto;
+    padding: 20px;
+    padding-bottom: 90px;
+
+}
+.portfolio h1{
+    font-size: 80px;
+    color: white;
+    font-family: "DM Serif Display", serif;
+    text-shadow:  5px 4px 0px rgba(0, 0, 0, 0.288);
+    text-align: center;
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+.quadradosPrimeiraParte{
+    display: flex;
+    flex-direction: row;
+}
+.quadradosSegundaParte{
+    display: flex;
+}
+.quadrado1{
+    flex: 50%;
+    justify-items: center;
+}
+.quadrado2{
+    flex: 50%;
+    justify-items: center;
+}
+#quadradoSolo{
+    width: 45%;
+    justify-items: center;
+}
+.servicos{
+    margin-top: 5px;
+}
+.card{
+    width: 70%;
+    border-left: 2px rgb(255, 255, 255) solid;
+    border-top: 2px rgb(255, 255, 255) solid;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(224,127,0,1);
+    -webkit-box-shadow: 16px 13px 0px -8px rgba(255, 255, 255, 0.73);
+    -moz-box-shadow: 16px 13px 0px -8px rgba(255, 255, 255, 0.73);
+    box-shadow: 16px 13px 0px -8px rgba(255, 255, 255, 0.73);
+}
+.card-text h3{
+   color: #ffffff;
+}
+#flexid{
+   flex: 1;
+}
+.card img{
+    width: 90%;
+    border-radius: 10px;
+}
+.texto-oculto{
+    display: none;
+    font-style: italic;
+    font-weight: 500;
+}
+.card:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    -webkit-box-shadow: 16px 13px 0px -8px rgba(224,127,0,1);
+    -moz-box-shadow: 16px 13px 0px -8px rgba(224,127,0,1);
+    box-shadow: 16px 13px 0px -8px rgba(224,127,0,1);
+}
+.card:hover img{
+    display: none;
+}
+.card:hover .card-text{
+    display: none;
+}
+.card:hover .texto-oculto{
+    display: block;
+}
+.card:hover .texto-oculto img{
+    width: 80px;
+    display: inline-block;
+}
+#sitecard{
+    width: 70%;
+}
+#sitecard1{
+    width: 55%;
+}#sitecard2{
+    width: 65%;
+}
+#sitecard3{
+    width: 65%;
+}
+.contoto{
+    background-color: #ffffff;
+}
+.contoto h1{
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    font-family: "DM Serif Display", serif;
+    text-shadow:  5px 4px 0px rgba(0, 0, 0, 0.288);
+    text-align: center;
+    width: 100%; /* Ocupa toda a largura disponível */ 
+}
+.contatos {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Adicione isso para alinhar os ícones horizontalmente */
+    justify-content: center; /* Centraliza os ícones */
+    align-items: center; /* Alinha os ícones verticalmente no centro */
+    padding: 10px; /* Adicione algum padding se necessário */
+}
+.contatos a {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(224,127,0,1);
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+.contatos a img {
+    width: 30px; /* Ajuste o tamanho da imagem se necessário */
+    height: 30px; /* Ajuste o tamanho da imagem se necessário */
+}
+.contatos a:hover {
+    background-color: rgba(8,76,97,1);
+}
+
